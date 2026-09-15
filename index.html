@@ -164,7 +164,7 @@
 
   <section class="block">
     <div class="block-title"><span class="dot"></span>Visão geral da operação<span class="tag pend">Não é sua diretamente, mas dá contexto</span></div>
-    <div class="block-note">Squad ICP inteiro (Danielle, Yuri e Giovanna — não é individual). Dados ao vivo via HubSpot (query_crm_data) + Databricks (execute_sql_read_only), recalculados em 15/09/2026 às 08h55 — mesma metodologia validada no bloco acima, sem filtro de dono.</div>
+    <div class="block-note">Squad ICP inteiro (Danielle, Yuri e Giovanna — não é individual). Dados ao vivo via HubSpot (query_crm_data) + Databricks (execute_sql_read_only), recalculados em 15/09/2026 às 10h55 às 08h55 — mesma metodologia validada no bloco acima, sem filtro de dono.</div>
     <div class="split-2">
       <div class="dash-card">
         <div class="dash-card-title">Instalação — Potencial vs. Realizado (ICP)</div>
@@ -185,7 +185,7 @@
   </section>
 
   <div class="footer">
-    Página fixa, sem conexão ao vivo com Databricks/HubSpot/Slack/Sheets — dados extraídos/recalculados em 15/09/2026 às 08h55.<br>
+    Página fixa, sem conexão ao vivo com Databricks/HubSpot/Slack/Sheets — dados extraídos/recalculados em 15/09/2026 às 10h55 às 08h55.<br>
     "Realizado" e "Dias para agendar" (bloco Potencial x Realizado) usam a metodologia correta: coorte via Databricks (view_weekly_finalizacao, casando hs_object_id ↔ ordem_de_servico) e cálculo por ticket, respectivamente. "Etapa" = sua equipe de agendamento (Danielle, Yuri, Giovanna), consultada direto por dono (owner IN (...)). "Visão geral da operação" e "Atendimento" também passaram a vir de consulta ao vivo (HubSpot/Databricks/Google Sheets), não de um print de conversa anterior.<br>
     Automação diária está em construção; por enquanto o Luiz atualiza manualmente.
   </div>
